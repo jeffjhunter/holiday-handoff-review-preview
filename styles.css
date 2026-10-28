@@ -27,3 +27,13 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 .progress-note{margin:10px 0 0}
 .claim-cta{margin-top:6px}
 @media(max-width:760px){.progress-steps li{font-size:11px;gap:6px}.progress-steps .step-dot{width:22px;height:22px;font-size:11px}.progress-steps.compact{padding:14px 16px 12px}}
+
+/* Seasonal: subtle Christmas snow + accent (added 2026-10-28, respects reduced motion) */
+.snow{position:fixed;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.snow i{position:absolute;top:-3vh;display:block;width:8px;height:8px;background:#fff;border-radius:50%;opacity:.85;filter:blur(.4px);box-shadow:0 0 3px #c9d7f2;animation:snow-fall linear infinite}
+@keyframes snow-fall{to{transform:translateY(106vh) translateX(var(--drift,0px)) rotate(180deg)}}
+@media(prefers-reduced-motion:reduce){.snow i{display:none}}
+.xmas-banner{background:var(--navy);color:#fff;text-align:center;font-size:12.5px;letter-spacing:.4px;padding:9px 16px;line-height:1.5}
+.xmas-banner b{color:var(--lime)}
+.progress-fill{background:linear-gradient(90deg,var(--lime),var(--coral))}
+.holiday-flag{display:inline-flex;align-items:center;gap:7px;background:var(--lime);color:var(--navy);font:800 10.5px/1 Mulish,Arial,sans-serif;letter-spacing:1.4px;padding:8px 12px;border-radius:99px;vertical-align:middle}
