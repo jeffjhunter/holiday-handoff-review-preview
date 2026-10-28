@@ -29,8 +29,8 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 @media(max-width:760px){.progress-steps li{font-size:11px;gap:6px}.progress-steps .step-dot{width:22px;height:22px;font-size:11px}.progress-steps.compact{padding:14px 16px 12px}}
 
 /* Seasonal: subtle Christmas snow + accent (added 2026-10-28, respects reduced motion) */
-.snow{position:fixed;inset:0;pointer-events:none;z-index:2;overflow:hidden}
-.snow i{position:absolute;top:-3vh;display:block;width:8px;height:8px;background:#fff;border-radius:50%;opacity:.85;filter:blur(.4px);box-shadow:0 0 3px #c9d7f2;animation:snow-fall linear infinite}
+.snow{position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden}
+.snow i{position:absolute;top:-3vh;display:block;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4f8ff 0 18%,#b9cbe6 40%,#8fa9cf 100%);opacity:.95;box-shadow:0 0 4px #8fa9cf;animation:snow-fall linear infinite}
 @keyframes snow-fall{to{transform:translateY(106vh) translateX(var(--drift,0px)) rotate(180deg)}}
 @media(prefers-reduced-motion:reduce){.snow i{display:none}}
 .xmas-banner{background:var(--navy);color:#fff;text-align:center;font-size:12.5px;letter-spacing:.4px;padding:9px 16px;line-height:1.5}
@@ -38,9 +38,9 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 .progress-fill{background:linear-gradient(90deg,var(--lime),var(--coral))}
 .holiday-flag{display:inline-flex;align-items:center;gap:7px;background:var(--lime);color:var(--navy);font:800 10.5px/1 Mulish,Arial,sans-serif;letter-spacing:1.4px;padding:8px 12px;border-radius:99px;vertical-align:middle}
 
-.santa-fly{position:fixed;top:6%;left:-140px;z-index:3;pointer-events:none;opacity:.9;animation:santa-cross 26s linear infinite;santa-delay:2s}
-.santa-fly svg{transform:rotate(-4deg)}
+.santa-fly{position:fixed;top:7%;left:-170px;z-index:5;pointer-events:none;opacity:1;animation:santa-cross 14s linear infinite;animation-delay:1s;filter:drop-shadow(0 4px 6px #10132f40)}
+.santa-fly svg{width:150px;height:auto;transform:rotate(-5deg)}
 @keyframes santa-cross{0%{transform:translateX(0) translateY(0)}25%{transform:translateX(30vw) translateY(14px)}50%{transform:translateX(60vw) translateY(-8px)}75%{transform:translateX(85vw) translateY(10px)}100%{transform:translateX(112vw) translateY(0)}}
 @keyframes sleigh-bob{0%,100%{margin-top:0}50%{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){.santa-fly{display:none}}
-.snow2 i{box-shadow:0 0 2px #e8eefc}
+.snow2 i{box-shadow:0 0 3px #9db3d8}
