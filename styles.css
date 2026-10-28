@@ -30,7 +30,7 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 
 /* Seasonal: subtle Christmas snow + accent (added 2026-10-28, respects reduced motion) */
 .snow{position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden}
-.snow i{position:absolute;top:-3vh;display:block;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4f8ff 0 18%,#b9cbe6 40%,#8fa9cf 100%);opacity:.95;box-shadow:0 0 4px #8fa9cf;animation:snow-fall linear infinite}
+.snow i{position:absolute;top:-3vh;display:block;width:13px;height:13px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg stroke='%23b9cbe6' stroke-width='2.1' stroke-linecap='round'%3E%3Cpath d='M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1'/%3E%3C/g%3E%3Ccircle cx='12' cy='12' r='3' fill='%23eef4ff'/%3E%3C/svg%3E");background-size:contain;background-repeat:no-repeat;opacity:.9;animation:snow-fall linear infinite}
 @keyframes snow-fall{to{transform:translateY(106vh) translateX(var(--drift,0px)) rotate(180deg)}}
 @media(prefers-reduced-motion:reduce){.snow i{display:none}}
 .xmas-banner{background:var(--navy);color:#fff;text-align:center;font-size:12.5px;letter-spacing:.4px;padding:9px 16px;line-height:1.5}
@@ -43,4 +43,4 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 @keyframes santa-cross{0%{transform:translateX(0) translateY(0)}25%{transform:translateX(30vw) translateY(14px)}50%{transform:translateX(60vw) translateY(-8px)}75%{transform:translateX(85vw) translateY(10px)}100%{transform:translateX(112vw) translateY(0)}}
 @keyframes sleigh-bob{0%,100%{margin-top:0}50%{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){.santa-fly{display:none}}
-.snow2 i{box-shadow:0 0 3px #9db3d8}
+
