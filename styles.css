@@ -38,8 +38,8 @@ main{max-width:1336px}.opt-hero{grid-template-columns:minmax(0,1.13fr) minmax(0,
 .progress-fill{background:linear-gradient(90deg,var(--lime),var(--coral))}
 .holiday-flag{display:inline-flex;align-items:center;gap:7px;background:var(--lime);color:var(--navy);font:800 10.5px/1 Mulish,Arial,sans-serif;letter-spacing:1.4px;padding:8px 12px;border-radius:99px;vertical-align:middle}
 
-.santa-fly{position:fixed;top:7%;left:-170px;z-index:5;pointer-events:none;opacity:1;animation:santa-cross 14s linear infinite;animation-delay:1s;filter:drop-shadow(0 4px 6px #10132f40)}
-.santa-fly svg{width:150px;height:auto;transform:rotate(-5deg)}
+.santa-fly{position:fixed;top:5%;left:-360px;z-index:5;pointer-events:none;animation:santa-cross 16s linear infinite;animation-delay:1s}
+.santa-fly svg{width:190px;height:auto;display:block}
 @keyframes santa-cross{0%{transform:translateX(0) translateY(0)}25%{transform:translateX(30vw) translateY(14px)}50%{transform:translateX(60vw) translateY(-8px)}75%{transform:translateX(85vw) translateY(10px)}100%{transform:translateX(112vw) translateY(0)}}
 @keyframes sleigh-bob{0%,100%{margin-top:0}50%{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){.santa-fly{display:none}}
